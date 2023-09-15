@@ -1,0 +1,84 @@
+.navBar {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem;
+	gap: 3rem;
+	max-height: 100vh;
+	max-width: 30%;
+}
+.containerProfile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+.profileImage {
+	width: 6rem;
+	border-style: solid;
+	border-radius: 0.438rem;
+	height: auto;
+}
+.profileEmail {
+	color: #4b494b;
+}
+.containerNavBarSection {
+	border-style: solid;
+	border-color: #4f4e4f;
+	border-width: 1px 0 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 1rem;
+}
+.navBarSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+.navBarSectionTitle {
+	font-size: 2rem;
+	text-align: center;
+}
+@media (min-width: 913px) and (max-width: 1199px) {
+	.profileImage {
+		width: 40%;
+	}
+	.navBarSection {
+		gap: 3rem;
+	}
+}
+@media (min-width: 769px) and (max-width: 912.8px) {
+	.profileImage {
+		width: 40%;
+	}
+	.profileEmail {
+		font-size: 0.7rem;
+	}
+	.navBarSection {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+	.navBarSectionTitle {
+		font-size: 1.5rem;
+	}
+	.navBar {
+		display: none;
+	}
+}
+@media (min-width: 577px) and (max-width: 768.8px) {
+	.navBar {
+		display: none;
+	}
+}
+@media (min-width: 380px) and (max-width: 576.8px) {
+	.navBar {
+		display: none;
+	}
+}
+@media (max-width: 379.8px) {
+	.navBar {
+		display: none;
+	}
+}
